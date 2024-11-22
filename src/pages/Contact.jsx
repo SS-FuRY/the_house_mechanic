@@ -38,12 +38,12 @@ const Contact = () => {
             phone_number: phone,
             message: message
         };
-        console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID,process.env.REACT_APP_EMAILJS_TEMPLATE_ID,process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
+        console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID,import.meta.env.VITE_EMAILJS_TEMPLATE_ID,import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
         emailjs.send(
-            process.env.REACT_APP_EMAILJS_SERVICE_ID,
-            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
             templateParams,
-            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
         .then((response) => {
             document.getElementById('submitBtn').disabled = false;

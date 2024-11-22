@@ -10,7 +10,7 @@ import {
 // All pages
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-
+import Gallery from './components/Gallery'; // Import the Gallery component
 
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
@@ -39,12 +39,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/gallery" element={<Gallery />} /> {/* Add Gallery route */}
           </Routes>
         </ScrollToTop>
       </Router>
     </>
   );
 }
-
 
 export default App;
