@@ -4,6 +4,9 @@ import img from '../images/27399448_plumber_04.svg';
 import img2 from '../images/handyman.svg';
 import img3 from '../images/hosting.svg';
 import img4 from '../images/consultation.svg';
+import wildeAnimalRemoval from '../images/wma.webp'
+import foundationService from '../images/fs.webp'
+import fencingAndDeck from '../images/dc.webp'
 
 
 
@@ -33,17 +36,17 @@ const Services = () => {
         {
             title: "Wild Animal Removal",
             description: "Our handyman services include general repair, maintenance, and installation services for residential and commercial properties.",
-            img: img
+            img: wildeAnimalRemoval
         },
         {
             title: "Foundation Services",
             description: "Our handyman services include general repair, maintenance, and installation services for residential and commercial properties.",
-            img: img2
+            img: foundationService
         },
         {
             title: "Fencing & Decks",
             description: "Our handyman services include general repair, maintenance, and installation services for residential and commercial properties.",
-            img: img3
+            img: fencingAndDeck
         },
         {
             title: "Other Services",
