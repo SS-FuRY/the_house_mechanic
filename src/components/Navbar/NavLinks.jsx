@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom'; // Add this import for regular routing
 
 const NavLinks = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -18,14 +19,8 @@ const NavLinks = () => {
     })
 
     let navbarClasses=['px-4 text-2xl font-extrabold'];
-    // if(scrolled){
-    //     navbarClasses.push('text-blue-500 hover:text-blue-900');
-    // } else {
-    //     navbarClasses.push('text-blue-900 hover:text-blue-800');
-    // }
     scrolled ? navbarClasses.push('text-blue-900 hover:text-blue-900 ') : navbarClasses.push('text-blue-900 hover:text-blue-800');
     
-
     return (
         <>
             <HashLink className={navbarClasses.join(" ")} smooth to="/#hero">
@@ -33,6 +28,9 @@ const NavLinks = () => {
             </HashLink>
             <HashLink className={navbarClasses.join(" ")} smooth to="/#services">
                 Services
+            </HashLink>
+            <HashLink className={navbarClasses.join(" ")} smooth to="/#gallery">
+                Gallery
             </HashLink>
             <HashLink className={navbarClasses.join(" ")} smooth to="/#contact">
                 Contact Us

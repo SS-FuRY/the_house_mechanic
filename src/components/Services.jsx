@@ -70,7 +70,7 @@ const Services = () => {
     };
 
     return (
-        <section data-aos="zoom-in-down">
+        <section id='services' data-aos="zoom-in-down">
             <div className="my-4 py-4">
                 <h2 className="my-2 text-center text-3xl text-blue-900 uppercase font-bold">services</h2>
                 <div className='flex justify-center'>
