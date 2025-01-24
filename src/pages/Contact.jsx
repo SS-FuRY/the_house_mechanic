@@ -167,7 +167,7 @@ const Contact = () => {
                                 </div>
                                 <div className="flex flex-col">
                                     <h2 className="text-2xl">Call Us</h2>
-                                    <p className="text-gray-400">Tel: 236-818-7473</p>
+                                    <p className="text-gray-400">Tel: 705-562-5684</p>
                                     <div className='mt-5'>
                                         <h2 className="text-2xl">Send an E-mail</h2>
                                         <p className="text-gray-400">thehousemechanicssudbury@gmail.com</p>
